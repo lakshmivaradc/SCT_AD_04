@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>QR Code Scanner & Generator</h1>
+
+  <div class="section">
+    <h2>🔍 Scan QR Code</h2>
+    <video id="video" width="300" height="200"></video>
+    <p id="output"></p>
+  </div>
+
+  <div class="section">
+    <h2>✏️ Create QR Code</h2>
+    <input type="text" id="text-input" placeholder="Enter text or link">
+    <button onclick="generateQRCode()">Generate</button>
+    <div id="qrcode"></div>
+  </div>
+
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
